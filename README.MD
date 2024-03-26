@@ -19,7 +19,9 @@ npm install barebones-css
 
 ## Usage
 
-```
+```jsx
+import '../node_modules/barebones-css/build/index.css';
+...
 <div class="bb-p-200 bb-m-500 bb-bg-primary-500"></div>
 
 ```
@@ -28,17 +30,22 @@ npm install barebones-css
 
 Create your own theme.scss and import our variables:
 
-```
-import '../node_modules/barebones-css/scss/variables/colors'
+```scss
+@import '../node_modules/barebones-css/build/scss/styles/'
 
-$custom-token: $primary700
+//use barebones $primary700 token in your custom scss
+$custom-token: $primary700;
+
+.custom {
+  color: $custom-token;
+}
 ```
 
 Or directly change the value of our variables:
 
-```
+```scss
 //overrides $primary700 from barebones-css variables
-$primary700: #d63384
+$primary700: #d63384;
 
-import '../node_modules/barebones-css/scss/variables'
+@import '../node_modules/barebones-css/build/scss/styles'
 ```

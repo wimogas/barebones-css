@@ -46,11 +46,11 @@
 }
 
 // Grid columns 
-// cols-1 through cols-12 (plus media queries, ex. cols-xl-5)
+// col-1 through col-12 (plus media queries, ex. col-xl-5)
 @each $key, $val in ($breakpoints-map) {
 	@if ($key == "xs") {
 		@for $col from 1 through 12 {
-			.#{$namespace}cols-#{$col} {
+			.#{$namespace}col-#{$col} {
 				display: grid;
 				grid-template-columns: repeat($col, 1fr);
 			}
@@ -58,7 +58,7 @@
 	} @else {
 		@media (min-width: $val) {
 			@for $col from 1 through 12 {
-				.#{$namespace}cols-#{$key}-#{$col} {
+				.#{$namespace}col-#{$key}-#{$col} {
 					display: grid;
 					grid-template-columns: repeat($col, 1fr);
 				}
