@@ -1,7 +1,0 @@
-
-
-@each $key, $val in ($border-radius-map) {
-	.#{$namespace}border-radius-#{$key} {
-		border-radius: $val;
-	}
-}

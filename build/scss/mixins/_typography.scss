@@ -1,4 +1,0 @@
-@mixin generate-type($fontToken) {
-    font-size: #{map-get($type-token-map, $fontToken, "font-size")};
-    line-height: #{map-get($type-token-map, $fontToken, "line-height")};
-}
