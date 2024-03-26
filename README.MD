@@ -20,7 +20,7 @@ npm install @wimogas/barebones-css
 ## Usage
 
 ```jsx
-import '../node_modules/barebones-css/build/index.css';
+import '../node_modules/@wimogasbarebones-css/build/index.css';
 ...
 <div class="bb-p-200 bb-m-500 bb-bg-primary-500"></div>
 
@@ -31,7 +31,7 @@ import '../node_modules/barebones-css/build/index.css';
 Create your own theme.scss and import our variables:
 
 ```scss
-@import '../node_modules/barebones-css/build/scss/styles/'
+@import '../node_modules/@wimogasbarebones-css/build/scss/styles/'
 
 //use barebones $primary700 token in your custom scss
 $custom-token: $primary700;
@@ -47,5 +47,5 @@ Or directly change the value of our variables:
 //overrides $primary700 from barebones-css variables
 $primary700: #d63384;
 
-@import '../node_modules/barebones-css/build/scss/styles'
+@import '../node_modules/@wimogasbarebones-css/build/scss/styles'
 ```
