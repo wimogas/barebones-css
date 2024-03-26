@@ -14,7 +14,7 @@ Check out the Storybook Docs:
 ## Installation
 
 ```bash
-npm install barebones-css
+npm install @wimogas/barebones-css
 ```
 
 ## Usage

@@ -1,5 +1,5 @@
 {
-  "name": "barebones-css",
+  "name": "@wimogas/barebones-css",
   "version": "1.0.0",
   "main": "./build/index.css",
   "files": [
