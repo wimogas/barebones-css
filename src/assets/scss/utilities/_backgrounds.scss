@@ -1,0 +1,133 @@
+@use '../variables/globals' as *;
+@use '../variables/colors' as *;
+
+.#{$namespace}black {background-color: $black}
+.#{$namespace}white {background-color: $white}
+
+// primary
+$primary-map: (
+	"50": $primary50,
+	"100": $primary100,
+	"200": $primary200,
+	"300": $primary300,
+	"400": $primary400,
+	"500": $primary500,
+	"600": $primary600,
+	"700": $primary700,
+	"800": $primary800,
+	"900": $primary900,
+);
+
+@each $key, $val in ($primary-map) {
+	.#{$namespace}bg-primary-#{$key} {
+		background-color: $val;
+	}
+}
+
+// secondary
+$secondary-map: (
+	"100": $secondary100,
+	"200": $secondary200,
+	"300": $secondary300,
+	"400": $secondary400,
+	"500": $secondary500,
+	"700": $secondary700,
+	"900": $secondary900,
+);
+
+@each $key, $val in ($secondary-map) {
+	.#{$namespace}bg-secondary-#{$key} {
+		background-color: $val;
+	}
+}
+
+// neutral
+$neutral-map: (
+	"50": $neutral50,
+	"100": $neutral100,
+	"200": $neutral200,
+	"300": $neutral300,
+	"400": $neutral400,
+	"500": $neutral500,
+	"600": $neutral600,
+	"700": $neutral700,
+	"800": $neutral800,
+	"900": $neutral900,
+);
+
+@each $key, $val in ($neutral-map) {
+	.#{$namespace}bg-neutral-#{$key} {
+		background-color: $val;
+	}
+}
+
+// error
+$error-map: (
+	"50": $error50,
+	"100": $error100,
+	"200": $error200,
+	"300": $error300,
+	"500": $error500,
+	"600": $error600,
+	"700": $error700,
+	"800": $error800,
+	"900": $error900,
+);
+
+@each $key, $val in ($error-map) {
+	.#{$namespace}bg-error-#{$key} {
+		background-color: $val;
+	}
+}
+
+// success
+$success-map: (
+	"50": $success50,
+	"100": $success100,
+	"200": $success200,
+	"500": $success500,
+	"600": $success600,
+	"700": $success700,
+	"800": $success800,
+	"900": $success900,
+);
+
+@each $key, $val in ($success-map) {
+	.#{$namespace}bg-success-#{$key} {
+		background-color: $val;
+	}
+}
+
+// warning
+$warning-map: (
+	"50": $warning50,
+	"100": $warning100,
+	"500": $warning500,
+	"600": $warning600,
+	"700": $warning700,
+	"800": $warning800,
+	"900": $warning900,
+);
+
+@each $key, $val in ($warning-map) {
+	.#{$namespace}bg-warning-#{$key} {
+		background-color: $val;
+	}
+}
+
+// info
+$info-map: (
+	"50": $info50,
+	"100": $info100,
+	"500": $info500,
+	"600": $info600,
+	"700": $info700,
+	"800": $info800,
+	"900": $info900,
+);
+
+@each $key, $val in ($info-map) {
+	.#{$namespace}bg-info-#{$key} {
+		background-color: $val;
+	}
+}
