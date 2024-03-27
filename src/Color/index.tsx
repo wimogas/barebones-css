@@ -7,7 +7,7 @@ const Color = ({variant}: ColorProps) => {
 
     return (
         <div className={`bb-w-100 bb-p-200 bb-${variant}`}>
-            bb-{variant}
+            .bb-{variant}
         </div>
     );
 };

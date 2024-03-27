@@ -1,0 +1,109 @@
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as UtilsStories from './Utils.stories';
+
+<Meta of={UtilsStories} />
+
+# Layout Utils
+
+## Wrap
+
+```css
+..bb-{key}
+```
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>wrap</td>
+<td>flex-wrap: wrap</td>
+</tr>
+<tr>
+<td>no-wrap</td>
+<td>flex-wrap: nowrap</td>
+</tr>
+</table>
+
+## Size
+
+```css
+..bb-{key}
+```
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>w-25</td>
+<td>width: 25%</td>
+</tr>
+<tr>
+<td>w-33</td>
+<td>width: 33%</td>
+</tr>
+<tr>
+<td>w-50</td>
+<td>width: 50%</td>
+</tr>
+<tr>
+<td>w-75</td>
+<td>width: 75%</td>
+</tr>
+<tr>
+<td>w-100</td>
+<td>width: 100%</td>
+</tr>
+<tr>
+<td>h-100</td>
+<td>height: 100%</td>
+</tr>
+</table>
+
+## Flex
+
+```css
+..bb-flex-{key}
+```
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>1-12</td>
+<td>flex: $key</td>
+</tr>
+
+</table>
+
+## Gap
+
+Note: To customize, override `$gap-map`
+
+```css
+..bb-gap-{key}
+```
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>100</td>
+<td>gap: 4px</td>
+</tr>
+<tr>
+<td>200</td>
+<td>gap: 8px</td>
+</tr>
+<tr>
+<td>300</td>
+<td>gap: 12px</td>
+</tr>
+
+</table>

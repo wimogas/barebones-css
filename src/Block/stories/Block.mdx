@@ -1,0 +1,116 @@
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as BlockStories from './Block.stories';
+
+<Meta of={BlockStories} />
+
+# Block
+
+```css
+.bb-block-{direction}-{justify}-{align}
+```
+
+## direction
+
+<table>
+<tr>
+<th>direction</th>
+<th>description</th>
+</tr>
+<tr>
+<td>row</td>
+<td>horizontal</td>
+</tr>
+<tr>
+<td>column</td>
+<td>vertical</td>
+</tr>
+</table>
+
+## justify (optional)
+
+<table>
+<tr>
+<th>justify</th>
+<th>description</th>
+</tr>
+<tr>
+<td>start</td>
+<td>flex-start</td>
+</tr>
+<tr>
+<td>end</td>
+<td>flex-end</td>
+</tr>
+<tr>
+<td>center</td>
+<td>center</td>
+</tr>
+<tr>
+<td>between</td>
+<td>space-between</td>
+</tr>
+<tr>
+<td>around</td>
+<td>space-around</td>
+</tr>
+<tr>
+<td>evenly</td>
+<td>space-evenly</td>
+</tr>
+</table>
+
+## align (optional)
+
+<table>
+<tr>
+<th>justify</th>
+<th>description</th>
+</tr>
+<tr>
+<td>start</td>
+<td>flex-start</td>
+</tr>
+<tr>
+<td>end</td>
+<td>flex-end</td>
+</tr>
+<tr>
+<td>center</td>
+<td>center</td>
+</tr>
+</table>
+
+
+# Examples
+
+## Column
+
+### Start
+
+<Canvas of={BlockStories.ColumnStart} />
+
+### End
+
+<Canvas of={BlockStories.ColumnEnd} />
+### Center
+
+<Canvas of={BlockStories.ColumnCenter} />
+
+### Between
+
+<Canvas of={BlockStories.ColumnBetween} />
+
+### Around
+
+<Canvas of={BlockStories.ColumnAround} />
+
+### Evenly
+
+<Canvas of={BlockStories.ColumnEvenly} />
+
+## Row
+
+<Canvas of={BlockStories.Row} />
+
+

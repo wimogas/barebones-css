@@ -28,10 +28,6 @@
 			@extend .#{$namespace}#{$key};
 			font-weight: $fontSemiBold;
 		}
-		&-bold {
-			@extend .#{$namespace}#{$key};
-			font-weight: $fontBold;
-		}
 	}
 }
 

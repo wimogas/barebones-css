@@ -14,7 +14,7 @@ const Template: React.FC<BorderRadiusProps> = (args) => (
             <BorderRadius variant="300"/>
             <BorderRadius variant="500"/>
             <BorderRadius variant="700"/>
-            <BorderRadius variant="900"/>
+            <BorderRadius variant="900" round/>
     </>
 );
 

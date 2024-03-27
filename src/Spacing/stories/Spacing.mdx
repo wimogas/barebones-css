@@ -1,0 +1,191 @@
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as SpacingStories from './Spacing.stories';
+
+<Meta of={SpacingStories} />
+
+# Spacing
+
+```css
+.bb-{prop}{sides}-{breakpoint}-{size}
+```
+
+## prop
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>m</td>
+<td>margin</td>
+</tr>
+<tr>
+<td>p</td>
+<td>padding</td>
+</tr>
+</table>
+
+## sides (optional)
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>t</td>
+<td>top</td>
+</tr>
+<tr>
+<td>b</td>
+<td>bottom</td>
+</tr>
+<tr>
+<td>l</td>
+<td>left</td>
+</tr>
+<tr>
+<td>r</td>
+<td>right</td>
+</tr>
+<tr>
+<td>x</td>
+<td>horizontal</td>
+</tr>
+<tr>
+<td>y</td>
+<td>vertical</td>
+</tr>
+</table>
+
+## breakpoint  (optional)
+
+Note: To customize, override `$breakpoint-map`
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>xs</td>
+<td>0</td>
+</tr>
+<tr>
+<td>sm</td>
+<td>@media (min-width: 940px)</td>
+</tr>
+<tr>
+<td>md</td>
+<td>@media (min-width: 1150px)</td>
+</tr>
+<tr>
+<td>lg</td>
+<td>@media (min-width:1440px)</td>
+</tr>
+<tr>
+<td>xl</td>
+<td>@media (min-width: 1700px)</td>
+</tr>
+</table>
+
+## size
+
+Note: To customize, override `$spacing-map`
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>50</td>
+<td>2px</td>
+</tr>
+<tr>
+<td>100</td>
+<td>4px</td>
+</tr>
+<tr>
+<td>150</td>
+<td>6px</td>
+</tr>
+<tr>
+<td>200</td>
+<td>8px</td>
+</tr>
+<tr>
+<td>250</td>
+<td>10px</td>
+</tr>
+<tr>
+<td>300</td>
+<td>12px</td>
+</tr>
+<tr>
+<td>350</td>
+<td>14px</td>
+</tr>
+<tr>
+<td>400</td>
+<td>16px</td>
+</tr>
+<tr>
+<td>450</td>
+<td>18px</td>
+</tr>
+<tr>
+<td>500</td>
+<td>20px</td>
+</tr>
+<tr>
+<td>550</td>
+<td>22px</td>
+</tr>
+<tr>
+<td>600</td>
+<td>24px</td>
+</tr>
+<tr>
+<td>650</td>
+<td>28px</td>
+</tr>
+<tr>
+<td>700</td>
+<td>32px</td>
+</tr>
+<tr>
+<td>750</td>
+<td>36px</td>
+</tr>
+<tr>
+<td>800</td>
+<td>40px</td>
+</tr>
+<tr>
+<td>850</td>
+<td>48px</td>
+</tr>
+<tr>
+<td>900</td>
+<td>56px</td>
+</tr>
+<tr>
+<td>950</td>
+<td>64px</td>
+</tr>
+</table>
+
+## Examples
+
+### Padding & Margin
+<Canvas of={SpacingStories.Padding} />
+
+### Sides
+<Canvas of={SpacingStories.Sides} />
+
+### Responsive
+<Canvas of={SpacingStories.Responsive} />
+
+

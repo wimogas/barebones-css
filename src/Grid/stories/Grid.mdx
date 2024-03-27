@@ -6,4 +6,47 @@ import * as GridStories from './Grid.stories';
 
 # Grid
 
+```css
+.bb-cols-{breakpoint}-{columns}
+```
+
+## breakpoint (optional)
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>xs</td>
+<td>0</td>
+</tr>
+<tr>
+<td>sm</td>
+<td>@media (min-width: 940px)</td>
+</tr>
+<tr>
+<td>md</td>
+<td>@media (min-width: 1150px)</td>
+</tr>
+<tr>
+<td>lg</td>
+<td>@media (min-width:1440px)</td>
+</tr>
+<tr>
+<td>xl</td>
+<td>@media (min-width: 1700px)</td>
+</tr>
+</table>
+
+## columns
+
+1 to 12
+
+# Examples
+
+## Responsive
+```css
+.bb-cols-2 .bb-cols-sm-4 .bb-cols-md-8
+```
 <Canvas of={GridStories.Grid} />

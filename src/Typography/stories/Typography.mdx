@@ -1,0 +1,131 @@
+import { Canvas, Meta } from '@storybook/blocks';
+
+import * as TypographyStories from './Typography.stories';
+
+<Meta of={TypographyStories} />
+
+# Typography
+
+## FontSize
+Note: To customize, override `$font-size-map`
+```css
+.bb-font-size-{key}
+```
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>100</td>
+<td>10px</td>
+</tr>
+<tr>
+<td>200</td>
+<td>12px</td>
+</tr>
+<tr>
+<td>300</td>
+<td>14px</td>
+</tr>
+<tr>
+<td>400</td>
+<td>16px</td>
+</tr>
+<tr>
+<td>500</td>
+<td>20px</td>
+</tr>
+<tr>
+<td>600</td>
+<td>24px</td>
+</tr>
+<tr>
+<td>700</td>
+<td>29px</td>
+</tr>
+<tr>
+<td>800</td>
+<td>35px</td>
+</tr>
+<tr>
+<td>900</td>
+<td>42px</td>
+</tr>
+</table>
+
+## LineHeight
+Note: To customize, override `$line-height-map`
+```css
+.bb-line-height-{key}
+```
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>100</td>
+<td>20px</td>
+</tr>
+<tr>
+<td>300</td>
+<td>24px</td>
+</tr>
+<tr>
+<td>500</td>
+<td>28px</td>
+</tr>
+<tr>
+<td>700</td>
+<td>36px</td>
+</tr>
+<tr>
+<td>900</td>
+<td>40px</td>
+</tr>
+<tr>
+<td>950</td>
+<td>48px</td>
+</tr>
+</table>
+
+## FontWeight
+Note: To customize, override `$font-weight-map`
+```css
+.bb-font-{key}
+```
+
+<table>
+<tr>
+<th>key</th>
+<th>description</th>
+</tr>
+<tr>
+<td>regular</td>
+<td>400</td>
+</tr>
+<tr>
+<td>semibold</td>
+<td>600</td>
+</tr>
+<tr>
+<td>bold</td>
+<td>700</td>
+</tr>
+</table>
+
+## Types
+
+### Heading
+<Canvas of={TypographyStories.Heading} />
+
+### Body
+<Canvas of={TypographyStories.Body} />
+
+### Link
+<Canvas of={TypographyStories.Link} />
+
+
